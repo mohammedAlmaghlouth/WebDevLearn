@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title>
+        <style>
+            body {
+                background-color: #202124;
+            }
+
+            #searchInput {
+                border: 20px;
+                background-color: transparent;
+                border-color: white;
+                border-width: 20px;
+                width: 38%;
+                height: 41px;
+                border-radius: 20px;
+                border: 1px solid #5c6065;
+                position:absolute;
+                top: 37%;
+                left: 30%;
+            }
+
+            #searchInput:hover {
+                background-color: #303134;
+                border: 1px solid #303134;
+                
+            }
+
+            #searchInput:focus {
+                color:white;
+                font-weight: 600;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            #googlelogo {
+                position:absolute;
+                top: 20%;
+                left: 40%;
+                
+            }
+
+            #SearchButton, #LuckyButton {
+                position:absolute;
+                top: 47%;
+                left: 40%;
+                background-color: #303134;
+                border-radius: 5px;
+                color:azure;
+                width: 140px;
+                height: 38px;
+                border-color: transparent;
+            }
+
+            #SearchButton:hover,#LuckyButton:hover {
+                border-color: white;
+                border-width: 0.1px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <!--Google logo-->
+        <div id="googlelogo">
+            <img src="google_original.png" alt="Google Logo" width="272" height="92">
+        </div>
+
+        <!--Form Elements 'textField & Submit button'-->
+        <div style="padding: 10px">
+            <form action="https://www.google.com/search">
+                <input id ="searchInput" type="text" name="q">
+                <input id="SearchButton" type="submit" value="Google Search">
+                <input style="left: 50%;" id="LuckyButton" type="submit" value="I'm Feeling Lucky">
+            </form>
+        </div>
+        
+
+    </body>
+</html>
