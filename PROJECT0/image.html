@@ -6,28 +6,17 @@
             body {
                 background-color: #202124;
             }
-            @media only screen and (max-width: 1500px){
-                #LuckyButton {
-                    top: 47%;
-                    left: 70%;
-                }
-            }
+            
 
             @media only screen and (max-width: 2000px) {
-                #advancedhyperlink {
-                    right: 5%;
-                }
-
-                #imagehyperlink {
-                    right: 1%;
-                }
+                
 
                 #searchInput {
                     width: 580px;
                 }
                 
 
-                #SearchButton, #LuckyButton {
+                #SearchButton{
                     
                     width: 140px;
                     height: 38px;
@@ -37,30 +26,23 @@
 
                 #SearchButton {
                     top: 47%;
-                    left: 39%;
+                    left: 44%;
                 }
 
-                #LuckyButton {
-                    top: 47%;
-                    left: 49%;
-                }
+                
 
 
               }
 
               @media only screen and (max-width: 1000px) {
-                #advancedhyperlink {
-                    right: 15%;
-                }
+                
                 #searchInput {
                     width: 350px;
                 }
-                #imagehyperlink {
-                    right: 2%;
-                }
+                
                 
 
-                #SearchButton, #LuckyButton {
+                #SearchButton {
                     
                     width: 140px;
                     height: 38px;
@@ -70,13 +52,10 @@
 
                 #SearchButton {
                     top: 47%;
-                    left: 39%;
+                    left: 60%;
                 }
 
-                #LuckyButton {
-                    top: 47%;
-                    left: 70%;
-                }
+               
 
               }
 
@@ -129,7 +108,7 @@
                 
             }
 
-            #SearchButton, #LuckyButton {
+            #SearchButton {
                 position:absolute;
                 
                 background-color: #303134;
@@ -139,7 +118,7 @@
                 border-color: transparent;
             }
 
-            #SearchButton:hover,#LuckyButton:hover {
+            #SearchButton:hover {
                 border-color: white;
                 border-width: 0.1px;
             }
@@ -175,6 +154,7 @@
                 <form action="https://www.google.com/search" method="GET">
                     <input id="searchInput" type="text" name="q">
                     <input type="hidden" name="tbm" value="isch">
+                    <button id="SearchButton" type="submit" name="btnK" value="Google Search">Google Search</button>
                     
                 </form>
             </div>
