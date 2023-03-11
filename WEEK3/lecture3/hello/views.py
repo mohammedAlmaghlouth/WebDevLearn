@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello world!")
+    return render(request, "hello/index.html")
 
 
 def greet(request, name):
